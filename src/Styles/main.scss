@@ -1,3 +1,6 @@
+@import './Screens/loginScreen.scss';
+@import './Components/navigation.scss';
+
 body{
     background-color: #C7CFEB;
     width: 100vw;
@@ -7,6 +10,36 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+h1, h2, h3{
+    padding: 0;
+    margin: 0;
+}
+
+input{
+    background-color: #E1E1E1;
+    border: none;
+    padding: 7px 14px;
+    border-radius: 7px;
+    font-size: 18px;
+
+    &:focus{
+        border: none;
+        outline: none;
+    }
+}
+
+button{
+    background-color: #4F4C6A;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+    width: fit-content;
+    align-self: center;
+    padding: 7px 28px;
+    border-radius: 7px;
+}
+
 .app{
     width: 100vw;
     height: 100vh;
@@ -23,27 +56,41 @@ body{
     width: 100%;
 }
 
-.login-screen{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .container{
     display: flex;
     flex-direction: column;
 
 }
 
-.logo-w-name{
-    display: flex;
-    flex-direction: row;
+.animated-background{
+    background: linear-gradient(270deg, #c7cfeb, #8d9ac8);
+    background-size: 400% 400%;
 
-    span{
-        font-size: 32px;
-    }
-
-    img{
-
-    }
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    -o-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+

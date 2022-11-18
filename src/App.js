@@ -7,13 +7,11 @@ import {
 } from "react-router-dom";
 import LoginScreen from "./Screens/LoginScreen";
 import ErrorScreen from "./Screens/ErrorScreen";
+import Navigation from './Components/Navigation';
 
 function App() {
   return (
     <div className='app'>
-      <div>
-        Navigation
-      </div>
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={LoginScreen()} />
