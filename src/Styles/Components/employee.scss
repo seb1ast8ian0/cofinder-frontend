@@ -1,0 +1,162 @@
+.wrapper{
+
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+}
+
+.employee-main-screen{
+    flex-direction: row;
+}
+
+.employees{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);;
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+    justify-content: center;
+
+}
+
+.wildCard{
+    
+    background-color: whitesmoke;
+    border: 1px dashed #4e4c6a;
+    min-width: 250px;
+    height: 350px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    .name-and-title{
+        
+        font-size: larger;
+        width: 100%;
+        background-color: #C7CFEB;
+        box-sizing: border-box;
+        padding: 14px;
+        border-radius: 14px 14px 0px 0px;
+        border-bottom: 1px dashed #4e4c6a;
+        padding-bottom: 40px;
+
+        .title{
+
+            color: black;
+            font-weight: 700;
+            font-size: smaller;
+
+        }
+
+    }
+
+    .profilepicture{
+
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px dashed #4e4c6a;
+        transform: translateY(-50%);
+        justify-self: center;
+        background-color: aliceblue;
+
+        img{
+            
+            height: 40px;
+            padding-top: 10px;
+        }
+
+        
+    }
+
+}
+
+.wildCards{
+    display: flex;
+    box-sizing: border-box;
+    overflow-x: scroll;
+    gap: 7px;
+    width: 100%;
+    padding: 14px;
+
+}
+
+.employee{
+    
+    background-color: whitesmoke;
+    border: 1px solid #4e4c6a;
+    min-width: 250px;
+    height: 350px;
+    box-sizing: border-box;
+    border-radius: 14px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    .picture-name{
+
+
+        display: flex;
+        flex-direction: row;
+        gap: 7px;
+
+        .name{
+
+            p{
+
+                color: black;
+                font-weight: 700;
+                font-size: smaller;
+                padding: 0;
+                margin: 0;
+    
+            }
+    
+            span{
+    
+                color: #4e4c6a;
+                font-size: small;
+                padding: 0;
+                margin: 0;
+    
+            }
+
+            
+                
+        }
+
+
+        .profilepicture{
+
+            width: 40px;
+            height: 40px;
+            overflow: hidden;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #4e4c6a;
+
+            img{
+                
+                height: 40px;
+            }
+
+            
+        }
+
+        
+
+    }
+}
