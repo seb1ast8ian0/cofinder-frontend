@@ -346,70 +346,164 @@
         height: 80%;
         padding: 10px;
         display: flex;
-        flex-direction: row;
-        gap: 20px;
+        flex-direction: column;
+        gap: 10px;
+        font-family: "Montserrat";
+        font-weight: 500;
 
-        .select-requirement {
-            width: 30%;
+        select {
+            border: none;
             background-color: white;
-            padding: 20px;
-            border-radius: 20px;
+            height: 30px;
+            border-radius: 8px;
+        }
 
-            .title {
-                font-size: 10pt;
-                font-weight: 400;
-                text-transform: uppercase;
+        input {
+            border: none;
+            background-color: white;
+            height: 30px;
+            border-radius: 8px;
+            padding: 0px;
+        }
+        
+        .named-field {
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            width: 100%;
+
+            label {
+                margin-bottom: 5px;
+            }
+        }
+
+        .row1 {
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            width: 100%;
+
+
+            .function-input {
+                width: 400px;
             }
 
-            ul {
-                padding: 0;
+            .experience-input {
+                width: 140px;
             }
 
-            li {
-                font-weight: 500;
-                list-style: none;
-                padding-top: 3px;
-                padding-bottom: 3px;
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 10px;
-                cursor: pointer;
+            .hours-input {
 
-                .material-symbols-outlined {
-                    color: #83859C;
-                    float: left;
-                    font-variation-settings : 'FILL' 1;
-                }
-            
-                .requirement {
-                    font-family: "Montserrat";
-                    font-weight: 500;
-                    color: #83859C
-                }
-            }
+                width: 140px;
 
-            li:hover {
-                .requirement {
-                    color: #4F4C6A
+                input[type=text] {
+                    text-align: center;
                 }
 
-                .material-symbols-outlined {
-                    color: #4F4C6A;
+                .variable-hours-rb {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin-top: 5px;
+
+                    input[type=checkbox] {
+                        margin: 0;
+                        margin-right: 10px;
+                        accent-color: #758bd4;
+                    }
                 }
             }
 
         }
 
-        .edit-requirement {
-            width: 70%;
-            margin: auto;
+        .row2 {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+
+            .location-input {
+                width: 250px;
+            }
+
+            .language-input {
+                width: 200px;
+
+                .icon-and-text {
+                    height: 30px;
+                    border: 1px solid #AEBBE8;
+                    border-radius: 8px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .material-symbols-outlined {
+                        scale: 0.8;
+                        color: #83859C;
+                        float: left;
+                        font-variation-settings : 'FILL' 1
+                    }
+                }
+            }
+        }
+
+        .row3 {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+
+            .skills-input {
+                width: 50%;
+
+                input {
+                    height: 200px;
+                }
+            }
+
+            .skills-suggestion {
+
+                width: 50%;
+
+                .heading {
+                    font-weight: 500;
+                    font-size: 12pt;
+                    color: #ABABAB;
+                    margin-bottom: 5px;
+                }
+
+                .suggested-skills {
+                    display: grid;
+                    grid-template-columns: 80px 80px 80px;
+                    grid-template-rows: 40px 40px; 
+                    column-gap: 10px;
+                    row-gap: 5px;
+                    margin-bottom: 15px;
+
+                    .item {
+                        width: 80px;
+                        background-color: #AEBBE8;
+                        padding: 3px;
+                        border-radius: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+            
         }
     }
 
     .buttons {
         display: flex;
         justify-content: flex-end;
+
+        .cancel {
+            background: none;
+            color: #4F4C6A;
+            margin-right: 20px;
+        }
     }
 
 }
@@ -430,8 +524,9 @@
         align-items: center;
 
         input {
-            margin: 0;
+            margin: 30px 0px 10px 0px;
             padding: 0;
+            margin-right: 10px;
         }
     }
 }
