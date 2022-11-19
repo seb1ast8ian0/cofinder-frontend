@@ -1,3 +1,7 @@
+import {
+    NavLink
+  } from "react-router-dom";
+
 function Navigation() {
 
     return(
@@ -5,18 +9,19 @@ function Navigation() {
 
             <nav>
                 <ul>
-                    <li className="active">
+                    <NavLink to='/employee' className={({ isActive }) => (isActive ? "active" : "")} >
                         <span className="material-symbols-outlined">home</span>
                         <span>Start</span>
-                    </li>
-                    <li>
+                    </NavLink>
+                    <NavLink to='/projects' className={({ isActive }) => (isActive ? "active" : "")} >
                         <span className="material-symbols-outlined">folder_open</span>
                         <span>Meine Projekte</span>
-                    </li>
-                    <li>
-                        <span className="material-symbols-outlined">manage_accounts</span>
+                    </NavLink>
+                    <NavLink to='/' className={({ isActive }) => (isActive ? "active" : "")} >
+                        <span className="material-symbols-outlined">home</span>
                         <span>Profil</span>
-                    </li>
+                    </NavLink>
+                    
                     
                 </ul>
             </nav>

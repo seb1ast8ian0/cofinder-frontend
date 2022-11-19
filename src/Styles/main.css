@@ -83,7 +83,11 @@ nav ul .active {
   color: #0F56B3;
   border-left: 4px solid;
 }
+<<<<<<< HEAD
 nav ul li {
+=======
+nav ul a {
+>>>>>>> a96c2537c8138ebadb46d0ae2353a9cce8b5a2e1
   box-sizing: border-box;
   padding: 14px 14px;
   display: flex;
@@ -93,8 +97,14 @@ nav ul li {
   border-radius: 3px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+<<<<<<< HEAD
 }
 nav ul li:hover {
+=======
+  text-decoration: none;
+}
+nav ul a:hover {
+>>>>>>> a96c2537c8138ebadb46d0ae2353a9cce8b5a2e1
   border-left: 4px solid #0F56B3;
   background-color: rgba(216, 234, 253, 0.337254902);
 }
@@ -138,6 +148,11 @@ button {
   align-self: center;
   padding: 7px 28px;
   border-radius: 7px;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
 }
 
 .app {
@@ -151,7 +166,7 @@ button {
 
 .screen {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 1;
   width: 100%;
 }
