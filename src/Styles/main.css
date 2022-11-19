@@ -79,15 +79,24 @@ nav ul {
   margin: 0;
 }
 nav ul .active {
-  background-color: whitesmoke;
+  background-color: #d8eafd;
   color: #0F56B3;
+  border-left: 4px solid;
 }
 nav ul li {
+  box-sizing: border-box;
   padding: 14px 14px;
   display: flex;
   align-items: center;
-  gap: 7px;
-  color: #818181;
+  gap: 14px;
+  color: #5d5f61;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+nav ul li:hover {
+  border-left: 4px solid #0F56B3;
+  background-color: rgba(216, 234, 253, 0.337254902);
 }
 
 body {
