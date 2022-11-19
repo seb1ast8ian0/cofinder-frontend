@@ -2,7 +2,10 @@ import EmployeePersonForm from '../Components/Forms/EmployeePersonForm';
 import EmployeeWorkForm from '../Components/Forms/EmployeeWorkForm';
 import EmployeeQualificationForm from '../Components/Forms/EmployeeQualificationForm';
 import EmployeeCertification from '../Components/Forms/EmployeeCertificationForm';
-//import Header from '../Components/Header';
+import EmployeeLanguagesForm from '../Components/Forms/EmployeeLanguagesForm';
+
+import EmployeeTopSkills from '../Components/EmployeeTopSkills';
+import EmployeeITSkills from '../Components/EmployeeITSkills';
 
 function EmployeeBasicData() {
 
@@ -21,11 +24,16 @@ function EmployeeBasicData() {
             
             <h3>Meine Zertifikate</h3>
             <EmployeeCertification/>
-            
+
             <h3>Meine IT-Kenntnisse</h3>
+            <EmployeeITSkills/>
 
             <h3>Meine Sprachen</h3>
+            <EmployeeLanguagesForm/>
+            <br></br><br></br><br></br>
             <h3>Meine Top 3 Soft Skills</h3>
+            <EmployeeTopSkills/>
+
             </div>
           
         </div>
