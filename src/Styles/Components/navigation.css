@@ -20,7 +20,7 @@ nav ul .active {
   color: #0F56B3;
   border-left: 4px solid;
 }
-nav ul li {
+nav ul a {
   box-sizing: border-box;
   padding: 14px 14px;
   display: flex;
@@ -30,8 +30,9 @@ nav ul li {
   border-radius: 3px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
+  text-decoration: none;
 }
-nav ul li:hover {
+nav ul a:hover {
   border-left: 4px solid #0F56B3;
   background-color: rgba(216, 234, 253, 0.337254902);
 }/*# sourceMappingURL=navigation.css.map */

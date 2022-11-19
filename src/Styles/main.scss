@@ -39,6 +39,14 @@ button{
     align-self: center;
     padding: 7px 28px;
     border-radius: 7px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover{
+
+        opacity: 0.8;
+
+    }
 }
 
 .app{
@@ -52,7 +60,7 @@ button{
 
 .screen{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex: 1;
     width: 100%;
 }
