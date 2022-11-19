@@ -1,10 +1,18 @@
 import React from "react";
+import {useDroppable} from '@dnd-kit/core';
 //import "../../Styles/Screens/loginScreen.css"
 
-class WildCard extends React.Component {
-    render() {
+function WildCard(props){
+
+  const {isOver, setNodeRef} = useDroppable({
+    id: props.id,
+  });
+  const style = {
+    opacity: isOver ? '0.2' : undefined,
+  };
+
       return (
-        <div className="wildCard">
+        <div className="wildCard" ref={setNodeRef} style={style}>
             <div className="name-and-title">
                 <div className="title">Junior Software Developer</div>
             </div>
@@ -46,5 +54,4 @@ class WildCard extends React.Component {
         </div>
       );
     }
-   }
    export default WildCard;
