@@ -7,7 +7,7 @@ function Projects(){
     var projects = [];
     for (var i = 0; i < 10; i++) {
       projects.push(
-        <Project/>
+        <Project id={i}/>
       );
     }
 

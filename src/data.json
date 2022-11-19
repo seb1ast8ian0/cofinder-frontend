@@ -1,45 +1,17 @@
 [
    {
-      "id":"1",
+      "id":1,
       "name":"Mustermann",
-      "vorname":"Max",
-      "age":"20",
-      "Email":"max.mustermann@gmail.com",
-      "Reisebereitschaft":"mittel",
-      "Arbeitsdauer":"3",
-      "Standort":"Ismaning, DE",
-      "Fachrichtung":"Software Entwicklung",
-      "Abteilung":"IT",
-      "Funktion":"Senior Requirements Engineering",
-      "Sprachen":[
-         {
-            "„Deutsch“":"https://countryflagsapi.com/png/de"
-         },
-         {
-            "„Englisch“":"https://countryflagsapi.com/png/gb"
-         },
-         {
-            "Chinesisch":"https://countryflagsapi.com/png/cn"
-         }
-
-      ],
-      "stundenzahl":"38",
-      "Berufserfahrung":"5",
-      "stundensatz": "70€"
-   },
-   {
-      "id":"2",
-      "name":"Mustermann",
-      "vorname":"Michel",
-      "age":"20",
-      "Email":"max.mustermann@gmail.com",
-      "Reisebereitschaft":"mittel",
-      "Arbeitsdauer":"3",
-      "Standort":"Ismaning, DE",
-      "Fachrichtung":"Software Entwicklung",
-      "Abteilung":"IT",
-      "Funktion":"Senior Requirements Engineering",
-      "Sprachen":[
+      "surname":"Max",
+      "age":20,
+      "email":"max.mustermann@gmail.com",
+      "travelAvailability":"mittel",
+      "yearsInCompany":3,
+      "location":"Ismaning, DE",
+      "area":"Software Entwicklung",
+      "department":"IT",
+      "function":"Senior Requirements Engineering",
+      "languages":[
          {
             "Deutsch":"https://countryflagsapi.com/png/de"
          },
@@ -47,61 +19,95 @@
             "Englisch":"https://countryflagsapi.com/png/gb"
          },
          {
-            "Spanisch":"https://countryflagsapi.com/png/es"
+            "Chinesisch":"https://countryflagsapi.com/png/cn"
          }
+
       ],
-      "stundenzahl":"20",
-      "Berufserfahrung":"5",
-      "stundensatz": "60€"
+      "hoursAvailable":38,
+      "yearsInJob":5,
+      "salary": 60
    },
    {
-      "id":"3",
+      "id":2,
       "name":"Mustermann",
-      "vorname":"Moritz",
-      "age":"20",
-      "Email":"max.mustermann@gmail.com",
-      "Reisebereitschaft":"mittel",
-      "Arbeitsdauer":"6",
-      "Standort":"Ismaning, DE",
-      "Fachrichtung":"Software Entwicklung",
-      "Abteilung":"IT",
-      "Funktion":"Senior Software Developer",
-      "Sprachen":[
+      "surname":"Maik",
+      "age":20,
+      "email":"max.mustermann@gmail.com",
+      "travelAvailability":"mittel",
+      "yearsInCompany":3,
+      "location":"Ismaning, DE",
+      "area":"Software Entwicklung",
+      "department":"IT",
+      "function":"Senior Requirements Engineering",
+      "languages":[
          {
-            "„Deutsch“":"https://countryflagsapi.com/png/de"
+            "Deutsch":"https://countryflagsapi.com/png/de"
          },
          {
-            "„Englisch“":"https://countryflagsapi.com/png/gb"
+            "Englisch":"https://countryflagsapi.com/png/gb"
+         },
+         {
+            "Chinesisch":"https://countryflagsapi.com/png/cn"
          }
+
       ],
-      "stundenzahl":"10",
-      "Berufserfahrung":"8",
-      "stundensatz": "90€"
+      "hoursAvailable":38,
+      "yearsInJob":5,
+      "salary": 70
+   },
+   {
+      "id":3,
+      "name":"Mustermann",
+      "surname":"Moritz",
+      "age":20,
+      "email":"max.mustermann@gmail.com",
+      "travelAvailability":"mittel",
+      "yearsInCompany":3,
+      "location":"Ismaning, DE",
+      "area":"Software Entwicklung",
+      "department":"IT",
+      "function":"Senior Requirements Engineering",
+      "languages":[
+         {
+            "Deutsch":"https://countryflagsapi.com/png/de"
+         },
+         {
+            "Englisch":"https://countryflagsapi.com/png/gb"
+         },
+         {
+            "Chinesisch":"https://countryflagsapi.com/png/cn"
+         }
+
+      ],
+      "hoursAvailable":38,
+      "yearsInJob":5,
+      "salary": 70
    },{
-      "id":"4",
-      "name":"Städler",
-      "vorname":"Sebastian",
-      "age":"20",
-      "Email":"max.mustermann@gmail.com",
-      "Reisebereitschaft":"hoch",
-      "Arbeitsdauer":"1",
-      "Standort":"Frankfurt am Main, DE",
-      "Fachrichtung":"Software Entwicklung",
-      "Abteilung":"IT",
-      "Funktion":"Junior Software Developer",
-      "Sprachen":[
+      "id":4,
+      "name":"Mustermann",
+      "surname":"Michel",
+      "age":20,
+      "email":"max.mustermann@gmail.com",
+      "travelAvailability":"mittel",
+      "yearsInCompany":3,
+      "location":"Ismaning, DE",
+      "area":"Software Entwicklung",
+      "department":"IT",
+      "function":"Senior Requirements Engineering",
+      "languages":[
          {
-            "„Deutsch“":"https://countryflagsapi.com/png/de"
+            "Deutsch":"https://countryflagsapi.com/png/de"
          },
          {
-            "„Englisch“":"https://countryflagsapi.com/png/gb"
+            "Englisch":"https://countryflagsapi.com/png/gb"
          },
          {
-            "Russisch":"https://countryflagsapi.com/png/ru"
+            "Chinesisch":"https://countryflagsapi.com/png/cn"
          }
+
       ],
-      "stundenzahl":"10",
-      "Berufserfahrung":"2",
-      "stundensatz": "11€"
+      "hoursAvailable":38,
+      "yearsInJob":5,
+      "salary": 70
    }
 ]

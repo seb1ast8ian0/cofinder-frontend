@@ -3,6 +3,11 @@
   color: #4F4C6A;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .projects {
   box-sizing: border-box;
   padding: 14px;
