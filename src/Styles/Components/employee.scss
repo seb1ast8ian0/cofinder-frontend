@@ -8,6 +8,15 @@
 
 .employee-main-screen{
     flex-direction: row;
+    
+    button{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: inherit;
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .employees{
@@ -15,8 +24,11 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, 250px);;
     grid-auto-rows: auto;
-    grid-gap: 1rem;
+    grid-gap: 14px 7px;
     justify-content: center;
+    padding: 14px;
+    box-sizing: border-box;
+    justify-content: start;
 
 }
 
@@ -30,16 +42,49 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    opacity: 0.4;
+    position: relative;
+    transition: 0.2s ease-in-out;
+
+    &::after{
+        content: '';
+        background-color: rgba(0, 0, 0, 0.529);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 20;
+        opacity: 0;
+        border-radius: 14px;
+    }
+
+    
+
+    
+
+    .text {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: small;
+    }
+
+    .material-symbols-outlined {
+        color: #83859C;
+        float: left;
+        font-variation-settings : 'FILL' 1
+    }
     
 
     .name-and-title{
         
-        font-size: 15pt;
+        font-size: normal;
         font-family: "Montserrat";
         font-weight: 600;
         text-align: center;
         width: 100%;
-        background-image: linear-gradient(#E1CBDE, #D2DCFF);
+        background:linear-gradient(135deg, #fad961 0%,#f76b1c 100%);
         box-sizing: border-box;
         padding: 14px;
         border-radius: 14px 14px 0px 0px;
@@ -47,9 +92,9 @@
 
         .title{
 
-            color: black;
+            color: white;
             font-weight: 700;
-            font-size: smaller;
+            font-size: large;
 
         }
 
@@ -82,19 +127,14 @@
 
         width: 80%;
         margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
 
-        .material-symbols-outlined {
-            color: #83859C;
-            float: left;
-            font-variation-settings : 'FILL' 1
-        }
+    
 
-        .text {
-            font-family: "Montserrat";
-            font-weight: 500;
-            font-size: 12pt;
-            margin-left: 30px;
-        }
+        
     }
 
     .required-experience {
@@ -102,37 +142,23 @@
         
         width: 80%;
         margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
 
-        .material-symbols-outlined {
-            color: #83859C;
-            float: left;
-            font-variation-settings : 'FILL' 1
-        }
+        
 
-        .text {
-            font-family: "Montserrat";
-            font-weight: 500;
-            font-size: 12pt;
-            margin-left: 30px;
-        }
     }
 
     .maximum-salary {
 
         width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 14px;
 
-        .material-symbols-outlined {
-            color: #83859C;
-            float: left;
-            font-variation-settings : 'FILL' 1
-        }
-
-        .text {
-            font-family: "Montserrat";
-            font-weight: 500;
-            font-size: 12pt;
-            margin-left: 30px;
-        }
     }
 
     .more-info {
@@ -143,10 +169,12 @@
 
         .title {
             font-weight: 620;
+            font-size: small;
         }
 
         .text {
             font-weight: 500;
+            font-size: small;
         }
     }
 
@@ -167,6 +195,12 @@
 
 }
 
+@keyframes animated-card {
+    0%{transform: scale(1);}
+    50%{transform: scale(1.02);}
+    100%{transform: scale(1);}
+}
+
 .wildCards{
     display: flex;
     box-sizing: border-box;
@@ -177,73 +211,140 @@
 
 }
 
-.employee{
+.employeeCard{
     
-    background-color: whitesmoke;
-    border: 1px solid #4e4c6a;
+    background-color: white;
     min-width: 250px;
     height: 350px;
     box-sizing: border-box;
     border-radius: 14px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: -4px -4px 15px white, 4px 4px 15px rgba(0, 0, 0, 0.20);
+
+    &:hover{
+        animation: animated-card 1s infinite;
+    }
+
+
+
+    .material-symbols-outlined {
+        color: #83859C;
+        float: left;
+        font-variation-settings : 'FILL' 1;
+    }
+
+    .text {
+        font-family: "Montserrat";
+        font-weight: 500;
+        font-size: small;
+    }
     
 
-    .picture-name{
-
-
-        display: flex;
-        flex-direction: row;
-        gap: 7px;
-
-        .name{
-
-            p{
-
-                color: black;
-                font-weight: 700;
-                font-size: smaller;
-                padding: 0;
-                margin: 0;
-    
-            }
-    
-            span{
-    
-                color: #4e4c6a;
-                font-size: small;
-                padding: 0;
-                margin: 0;
-    
-            }
-
-            
-                
-        }
-
-
-        .profilepicture{
-
-            width: 40px;
-            height: 40px;
-            overflow: hidden;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid #4e4c6a;
-
-            img{
-                
-                height: 40px;
-            }
-
-            
-        }
-
+    .name-and-title{
         
+        font-size: 13pt;
+        font-family: "Montserrat";
+        font-weight: 600;
+        text-align: center;
+        width: 100%;
+        background:linear-gradient(135deg, #17ead9 0%,#6078ea 100%);
+        box-sizing: border-box;
+        padding: 14px;
+        border-radius: 14px 14px 0px 0px;
+        padding-bottom: 33px;
+        min-height: 100px;
+
+        .title{
+            color: rgba(255, 255, 255, 0.635);
+            font-weight: 500;
+            font-size: smaller;
+        }
+
+        .name {
+            font-weight: 700;
+            color: white;
+        }
 
     }
+
+    .profilepicture{
+
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid white;
+        transform: translateY(-50%);
+        justify-self: center;
+        background-color: white;
+
+        img{
+            height: 40px;
+            padding-top: 10px;
+        }
+    }
+
+    .available-hours {
+        width: 80%;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .experience {
+        width: 80%;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .salary {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .more-info {
+
+        width: 80%;
+        margin-top: 10px;
+        font-family: "Montserrat";
+
+        .title {
+            font-weight: 620;
+        }
+    }
+
+    .languages {
+
+        margin-top: 10px;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+
+        .flag {
+
+            
+
+            img {
+                float: left;
+                margin-right: 5px;
+                height: 20px;
+                border-radius: 2px;
+                box-shadow: 0 0 3px rgba(56, 51, 51, 0.688);
+            }
+        }
+    }
+
 }
