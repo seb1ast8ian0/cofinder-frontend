@@ -33,27 +33,23 @@ input{
 }
 
 button{
-    background-color: #4F4C6A;
-    color: whitesmoke;
+    background-image: linear-gradient(-190deg, #758bd4, #B9BEEE);
+    color: white;
+    font-weight: 700;
     border: none;
     outline: none;
     width: fit-content;
     align-self: center;
     padding: 7px 28px;
-    border-radius: 7px;
+    border-radius: 20px;
+    box-shadow: -4px -4px 15px white, 4px 4px 15px rgba(0, 0, 0, 0.30);
     transition: 0.2s ease-in-out;
     cursor: pointer;
 
     &:hover{
-
+        background-image: linear-gradient(-210deg, #758bd4, #B9BEEE);
         opacity: 0.8;
-
     }
-}
-
-.button-light{
-    background: none;
-    color: #4F4C6A;
 }
 
 .app{
