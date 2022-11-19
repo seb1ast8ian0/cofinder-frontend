@@ -12,11 +12,22 @@ function EmployeeMainScreen() {
   const [isDropped, setIsDropped] = useState(false);
 
   var employees = [];
-  for (var i = 1; i < 10; i++) {
+  /*for (var i = 1; i < 10; i++) {
     employees.push(
       <EmployeeCard id={i}/>
     );
-  }
+  }*/
+
+  let employee_json = require('../../data.json');
+
+  employee_json.forEach(function(employee){
+    employees.push(
+      <EmployeeCard data={employee}/>
+    )
+  } 
+  )
+
+  console.log(employee_json);
 
   var wildCards = [];
   for (var i = 1; i < 5; i++) {

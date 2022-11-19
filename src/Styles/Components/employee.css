@@ -144,6 +144,29 @@
   border-radius: 2px;
 }
 
+@-webkit-keyframes animated-card {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animated-card {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .wildCards {
   display: flex;
   box-sizing: border-box;
@@ -163,6 +186,10 @@
   flex-direction: column;
   align-items: center;
   box-shadow: -4px -4px 15px white, 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.employeeCard:hover {
+  -webkit-animation: animated-card 1s infinite;
+          animation: animated-card 1s infinite;
 }
 .employeeCard .material-symbols-outlined {
   color: #83859C;
@@ -185,6 +212,7 @@
   padding: 14px;
   border-radius: 14px 14px 0px 0px;
   padding-bottom: 33px;
+  min-height: 100px;
 }
 .employeeCard .name-and-title .title {
   color: rgba(255, 255, 255, 0.635);
@@ -246,10 +274,13 @@
 .employeeCard .languages {
   margin-top: 10px;
   width: 80%;
+  display: flex;
+  justify-content: center;
 }
 .employeeCard .languages .flag img {
   float: left;
   margin-right: 5px;
   height: 20px;
   border-radius: 2px;
+  box-shadow: 0 0 3px rgba(56, 51, 51, 0.688);
 }/*# sourceMappingURL=employee.css.map */

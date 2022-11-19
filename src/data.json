@@ -1,0 +1,107 @@
+[
+   {
+      "id":"1",
+      "name":"Mustermann",
+      "vorname":"Max",
+      "age":"20",
+      "Email":"max.mustermann@gmail.com",
+      "Reisebereitschaft":"mittel",
+      "Arbeitsdauer":"3",
+      "Standort":"Ismaning, DE",
+      "Fachrichtung":"Software Entwicklung",
+      "Abteilung":"IT",
+      "Funktion":"Senior Requirements Engineering",
+      "Sprachen":[
+         {
+            "„Deutsch“":"https://countryflagsapi.com/png/de"
+         },
+         {
+            "„Englisch“":"https://countryflagsapi.com/png/gb"
+         },
+         {
+            "Chinesisch":"https://countryflagsapi.com/png/cn"
+         }
+
+      ],
+      "stundenzahl":"38",
+      "Berufserfahrung":"5",
+      "stundensatz": "70€"
+   },
+   {
+      "id":"2",
+      "name":"Mustermann",
+      "vorname":"Michel",
+      "age":"20",
+      "Email":"max.mustermann@gmail.com",
+      "Reisebereitschaft":"mittel",
+      "Arbeitsdauer":"3",
+      "Standort":"Ismaning, DE",
+      "Fachrichtung":"Software Entwicklung",
+      "Abteilung":"IT",
+      "Funktion":"Senior Requirements Engineering",
+      "Sprachen":[
+         {
+            "Deutsch":"https://countryflagsapi.com/png/de"
+         },
+         {
+            "Englisch":"https://countryflagsapi.com/png/gb"
+         },
+         {
+            "Spanisch":"https://countryflagsapi.com/png/es"
+         }
+      ],
+      "stundenzahl":"20",
+      "Berufserfahrung":"5",
+      "stundensatz": "60€"
+   },
+   {
+      "id":"3",
+      "name":"Mustermann",
+      "vorname":"Moritz",
+      "age":"20",
+      "Email":"max.mustermann@gmail.com",
+      "Reisebereitschaft":"mittel",
+      "Arbeitsdauer":"6",
+      "Standort":"Ismaning, DE",
+      "Fachrichtung":"Software Entwicklung",
+      "Abteilung":"IT",
+      "Funktion":"Senior Software Developer",
+      "Sprachen":[
+         {
+            "„Deutsch“":"https://countryflagsapi.com/png/de"
+         },
+         {
+            "„Englisch“":"https://countryflagsapi.com/png/gb"
+         }
+      ],
+      "stundenzahl":"10",
+      "Berufserfahrung":"8",
+      "stundensatz": "90€"
+   },{
+      "id":"4",
+      "name":"Städler",
+      "vorname":"Sebastian",
+      "age":"20",
+      "Email":"max.mustermann@gmail.com",
+      "Reisebereitschaft":"hoch",
+      "Arbeitsdauer":"1",
+      "Standort":"Frankfurt am Main, DE",
+      "Fachrichtung":"Software Entwicklung",
+      "Abteilung":"IT",
+      "Funktion":"Junior Software Developer",
+      "Sprachen":[
+         {
+            "„Deutsch“":"https://countryflagsapi.com/png/de"
+         },
+         {
+            "„Englisch“":"https://countryflagsapi.com/png/gb"
+         },
+         {
+            "Russisch":"https://countryflagsapi.com/png/ru"
+         }
+      ],
+      "stundenzahl":"10",
+      "Berufserfahrung":"2",
+      "stundensatz": "11€"
+   }
+]
