@@ -1,7 +1,7 @@
 import React from "react";
 //import "../../Styles/Screens/loginScreen.css";
-import {useDraggable} from '@dnd-kit/core';
-import {CSS} from '@dnd-kit/utilities';
+import { useDraggable } from '@dnd-kit/core';
+import { CSS } from '@dnd-kit/utilities';
 
 function EmployeeCard(props) {
 
@@ -18,7 +18,7 @@ function EmployeeCard(props) {
 
       return (
 
-        <button ref={setNodeRef} style={style} {...attributes} {...listeners} >
+        <div ref={setNodeRef} style={style} {...attributes} {...listeners} >
         <div  className="employeeCard"  >
             <div className="name-and-title">
                 <div className="name">Max Mustermann</div>
@@ -60,7 +60,7 @@ function EmployeeCard(props) {
             </div>
 
         </div>
-        </button>
+        </div>
 
         
       );
