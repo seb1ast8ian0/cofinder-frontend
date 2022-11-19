@@ -17,26 +17,26 @@
 }
 
 .wildCard {
-  background-color: whitesmoke;
-  border: 1px dashed #4e4c6a;
+  background-color: white;
   min-width: 250px;
   height: 350px;
   box-sizing: border-box;
   border-radius: 14px;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .wildCard .name-and-title {
-  font-size: larger;
+  font-size: 15pt;
+  font-family: "Montserrat";
+  font-weight: 600;
+  text-align: center;
   width: 100%;
-  background-color: #C7CFEB;
+  background-image: linear-gradient(#E1CBDE, #D2DCFF);
   box-sizing: border-box;
   padding: 14px;
   border-radius: 14px 14px 0px 0px;
-  border-bottom: 1px dashed #4e4c6a;
-  padding-bottom: 40px;
+  padding-bottom: 33px;
 }
 .wildCard .name-and-title .title {
   color: black;
@@ -51,14 +51,79 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px dashed #4e4c6a;
+  border: 3px solid white;
   transform: translateY(-50%);
   justify-self: center;
-  background-color: aliceblue;
+  background-color: white;
 }
 .wildCard .profilepicture img {
   height: 40px;
   padding-top: 10px;
+}
+.wildCard .required-hours {
+  width: 80%;
+  margin-bottom: 5px;
+}
+.wildCard .required-hours .material-symbols-outlined {
+  color: #83859C;
+  float: left;
+  font-variation-settings: "FILL" 1;
+}
+.wildCard .required-hours .text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12pt;
+  margin-left: 30px;
+}
+.wildCard .required-experience {
+  width: 80%;
+  margin-bottom: 5px;
+}
+.wildCard .required-experience .material-symbols-outlined {
+  color: #83859C;
+  float: left;
+  font-variation-settings: "FILL" 1;
+}
+.wildCard .required-experience .text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12pt;
+  margin-left: 30px;
+}
+.wildCard .maximum-salary {
+  width: 80%;
+}
+.wildCard .maximum-salary .material-symbols-outlined {
+  color: #83859C;
+  float: left;
+  font-variation-settings: "FILL" 1;
+}
+.wildCard .maximum-salary .text {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12pt;
+  margin-left: 30px;
+}
+.wildCard .more-info {
+  width: 80%;
+  margin-top: 10px;
+  font-family: "Montserrat";
+}
+.wildCard .more-info .title {
+  font-weight: 620;
+}
+.wildCard .more-info .text {
+  font-weight: 500;
+}
+.wildCard .languages {
+  margin-top: 10px;
+  width: 80%;
+}
+.wildCard .languages .flag img {
+  float: left;
+  margin-right: 5px;
+  height: 20px;
+  border-radius: 2px;
 }
 
 .wildCards {
