@@ -3,10 +3,53 @@
   align-items: center;
   justify-content: center;
 }
+.login-screen .backdrop {
+  position: absolute;
+  z-index: -10;
+  bottom: 0;
+  -webkit-animation: backdrop-animation 5s infinite;
+          animation: backdrop-animation 5s infinite;
+}
 
+@-webkit-keyframes backdrop-animation {
+  0% {
+    transform: translateX(0%);
+    transform: scaleX(100%);
+    transform: scaleY(100%);
+  }
+  50% {
+    transform: translateX(10%);
+    transform: scaleX(110%);
+    transform: scaleY(120%);
+  }
+  100% {
+    transform: translateX(0%);
+    transform: scaleX(100%);
+    transform: scaleY(100%);
+  }
+}
+
+@keyframes backdrop-animation {
+  0% {
+    transform: translateX(0%);
+    transform: scaleX(100%);
+    transform: scaleY(100%);
+  }
+  50% {
+    transform: translateX(10%);
+    transform: scaleX(110%);
+    transform: scaleY(120%);
+  }
+  100% {
+    transform: translateX(0%);
+    transform: scaleX(100%);
+    transform: scaleY(100%);
+  }
+}
 .login-container {
   align-items: center;
   gap: 14px;
+  transform: translatey(-50px);
 }
 
 .greeting {
@@ -83,11 +126,7 @@ nav ul .active {
   color: #0F56B3;
   border-left: 4px solid;
 }
-<<<<<<< HEAD
-nav ul li {
-=======
 nav ul a {
->>>>>>> a96c2537c8138ebadb46d0ae2353a9cce8b5a2e1
   box-sizing: border-box;
   padding: 14px 14px;
   display: flex;
@@ -97,14 +136,9 @@ nav ul a {
   border-radius: 3px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-<<<<<<< HEAD
-}
-nav ul li:hover {
-=======
   text-decoration: none;
 }
 nav ul a:hover {
->>>>>>> a96c2537c8138ebadb46d0ae2353a9cce8b5a2e1
   border-left: 4px solid #0F56B3;
   background-color: rgba(216, 234, 253, 0.337254902);
 }

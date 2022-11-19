@@ -9,11 +9,11 @@ class EmployeePersonForm extends React.Component {
                     <div className="data">
                         <div className="person-input">
                             <label htmlFor="surname">Vorname</label>
-                            <input type="text" name="surname" placeholder="Hi" />
+                            <input type="text" name="surname" placeholder="Vorname" />
                         </div>
                         <div className="person-input">
                             <label htmlFor="lastname">Nachname</label>
-                            <input type="text" name="lastname" placeholder="Na"/>
+                            <input type="text" name="lastname" placeholder="Nachname"/>
                         </div>
                         <div className="small-person-input">
 
