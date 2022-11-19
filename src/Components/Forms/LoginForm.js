@@ -19,7 +19,7 @@ class LoginForm extends React.Component {
                 <button>Log In</button>
                 <div className="register-text">
                     <span>Noch nicht angemeldet?</span>
-                    <a href="#">Registrieren</a>
+                    <a href="#">Konto anfordern</a>
                 </div>
                 
                 

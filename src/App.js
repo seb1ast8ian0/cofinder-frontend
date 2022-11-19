@@ -9,6 +9,7 @@ import LoginScreen from "./Screens/LoginScreen";
 import ErrorScreen from "./Screens/ErrorScreen";
 import Header from './Components/Header';
 import EmployeeMainScreen from './Screens/Employee/EmployeeMainScreen';
+import ManagerProjectScreen from './Screens/Manager/ManagerProjectScreen';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Header/>
       <BrowserRouter>
         <Routes>
+          <Route path="/projects" element={ManagerProjectScreen()} />
           <Route path="/login" element={LoginScreen()} />
           <Route path="/employee" element={EmployeeMainScreen()} />
           <Route path="*" element={ErrorScreen()} />
