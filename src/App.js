@@ -6,6 +6,7 @@ import {
   Redirect
 } from "react-router-dom";
 import LoginScreen from "./Screens/LoginScreen";
+import EmployeeBasicData from "./Screens/EmployeeBasicData";
 import ErrorScreen from "./Screens/ErrorScreen";
 import Navigation from './Components/Navigation';
 
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={LoginScreen()} />
+          <Route path="/employeebasicdata" element={EmployeeBasicData()} />
           <Route path="*" element={ErrorScreen()} />
         </Routes>
       </BrowserRouter>
