@@ -1,16 +1,14 @@
-import './Styles/main.css';
 import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Redirect
+  BrowserRouter, Route, Routes
 } from "react-router-dom";
-import LoginScreen from "./Screens/LoginScreen";
-import EmployeeBasicData from "./Screens/EmployeeBasicData";
-import ErrorScreen from "./Screens/ErrorScreen";
 import Header from './Components/Header';
 import EmployeeMainScreen from './Screens/Employee/EmployeeMainScreen';
+import EmployeeBasicData from "./Screens/EmployeeBasicData";
+import ErrorScreen from "./Screens/ErrorScreen";
+import LoginScreen from "./Screens/LoginScreen";
 import ManagerProjectScreen from './Screens/Manager/ManagerProjectScreen';
+import TestEditWildCardModalScreen from "./Screens/TestEditWildCardModalScreen";
+import './Styles/main.css';
 
 function App() {
   return (
@@ -22,6 +20,7 @@ function App() {
           <Route path="/login" element={LoginScreen()} />
           <Route path="/employeebasicdata" element={EmployeeBasicData()} />
           <Route path="/employee" element={EmployeeMainScreen()} />
+          <Route path="/testeditwildcardmodal" element={TestEditWildCardModalScreen()} />
           <Route path="*" element={ErrorScreen()} />
         </Routes>
       </BrowserRouter>
