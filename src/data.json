@@ -24,8 +24,8 @@
 
       ],
       "hoursAvailable":38,
-      "yearsInJob":5,
-      "salary": 60
+      "yearsInJob":7,
+      "salary": 30
    },
    {
       "id":2,
@@ -34,7 +34,7 @@
       "age":20,
       "email":"max.mustermann@gmail.com",
       "travelAvailability":"mittel",
-      "yearsInCompany":3,
+      "yearsInCompany":1,
       "location":"Ismaning, DE",
       "area":"Software Entwicklung",
       "department":"IT",
@@ -47,7 +47,7 @@
             "Englisch":"https://countryflagsapi.com/png/gb"
          },
          {
-            "Chinesisch":"https://countryflagsapi.com/png/cn"
+            "Chinesisch":"https://countryflagsapi.com/png/ne"
          }
 
       ],
@@ -80,7 +80,7 @@
 
       ],
       "hoursAvailable":38,
-      "yearsInJob":5,
+      "yearsInJob":3,
       "salary": 70
    },{
       "id":4,
@@ -102,12 +102,12 @@
             "Englisch":"https://countryflagsapi.com/png/gb"
          },
          {
-            "Chinesisch":"https://countryflagsapi.com/png/cn"
+            "Chinesisch":"https://countryflagsapi.com/png/ru"
          }
 
       ],
       "hoursAvailable":38,
-      "yearsInJob":5,
-      "salary": 70
+      "yearsInJob":9,
+      "salary": 55
    }
 ]
