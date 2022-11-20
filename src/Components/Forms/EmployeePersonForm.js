@@ -9,8 +9,8 @@ class EmployeePersonForm extends React.Component {
                     <div className="data">
                     <div className="smallgridy">
                             <div className="person-input">
-                                <label htmlFor="surname">Vorname</label>
-                                <input type="text" name="surname" placeholder="Vorname" />
+                                <label htmlFor="firstname">Vorname</label>
+                                <input type="text" name="firstname" placeholder="Vorname" />
                             </div>
                             
                             <div className="person-input">

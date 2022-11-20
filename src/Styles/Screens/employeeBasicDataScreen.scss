@@ -180,6 +180,11 @@
   .fourgrid{
     display: grid;
     grid-template-columns: repeat(4, 30% [col-start]);
+    margin-bottom: 3%;
+  }
+
+  .material-symbols-outlined{
+    margin-top: 10%;
   }
 
   .toSelect{
