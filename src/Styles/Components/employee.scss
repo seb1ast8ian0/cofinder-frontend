@@ -366,9 +366,11 @@
     .wrapper {
         margin: auto;
         font-family: "Montserrat";
+        background-image: url("../../../public/layered-waves_variant1.svg");
+        background-color: #eff1f3;
+        background-repeat: no-repeat;
         border-radius: 20px;
         padding: 20px;
-        background-color: #EFF1F3;
         width: 80%;
         box-sizing: border-box;
 
@@ -467,7 +469,8 @@
 
                     .icon-and-text {
                         height: 30px;
-                        border: 1px solid #AEBBE8;
+                        border: 2px solid #c9cce2;
+                        color: #7b81ba;
                         border-radius: 8px;
                         display: flex;
                         justify-content: center;
@@ -521,7 +524,7 @@
 
                         .item {
                             width: 80px;
-                            background-color: #AEBBE8;
+                            background-color: #c9cce2;
                             padding: 3px;
                             border-radius: 30px;
                             display: flex;
