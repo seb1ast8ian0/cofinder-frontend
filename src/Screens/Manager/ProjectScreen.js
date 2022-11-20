@@ -1,19 +1,17 @@
-import {useState} from 'react'
-import {DndContext} from '@dnd-kit/core';
+import { DndContext } from '@dnd-kit/core';
+import { useState } from 'react';
+import EditWildCardModal from '../../Components/EditWildCardModal';
 import EmployeeCard from "../../Components/EmployeeCard";
 import EmployeeCardDroppable from "../../Components/EmployeeCardDroppable";
 import Navigation from "../../Components/Navigation";
 import WildCard from "../../Components/WildCard";
 import "../../Styles/Components/employee.css";
 import "../../Styles/Components/navigation.css";
-import {
-  useParams
-} from "react-router-dom";
-
 
 function EmployeeMainScreen() {
 
   const [isDropped, setIsDropped] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const url = "https://yummy-oranges-type-78-94-15-62.loca.lt";
 
@@ -38,7 +36,7 @@ function EmployeeMainScreen() {
 
     if(wildCard.employee === null || wildCard.employee === undefined){
 
-      wildCards.push(<WildCard data={wildCard} id={wildCard.id}/>)
+      wildCards.push(<WildCard data={wildCard} id={wildCard.id} showModal={setShowModal}/>)
 
     } else {
 
@@ -64,6 +62,8 @@ function EmployeeMainScreen() {
         <div className="screen employee-main-screen">
             <Navigation/>
             <div className="wrapper">
+
+              <EditWildCardModal show={showModal} setShow={setShowModal}/>
 
               <DndContext onDragEnd={handleDragEnd}>
 
