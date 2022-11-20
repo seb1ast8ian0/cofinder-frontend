@@ -4,7 +4,7 @@ function TestEditWildCardModalScreen() {
 
     return(
         <div>
-            <EditWildCardModal/>
+            <EditWildCardModal show={true} setShow={() => {}}/>
         </div>
     );
 
