@@ -1,5 +1,5 @@
+import { useDroppable } from '@dnd-kit/core';
 import React from "react";
-import {useDroppable} from '@dnd-kit/core';
 //import "../../Styles/Screens/loginScreen.css"
 
 function WildCard(props){
@@ -12,7 +12,7 @@ function WildCard(props){
   };
 
       return (
-        <div className="wildCard" ref={setNodeRef} style={style}>
+        <div className="wildCard" ref={setNodeRef} style={style} onClick={() => props.showModal(true)}>
             <div className="name-and-title">
                 <div className="title">Junior Software Developer</div>
             </div>
