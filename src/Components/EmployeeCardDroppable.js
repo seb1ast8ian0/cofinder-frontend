@@ -5,24 +5,14 @@ import { CSS } from '@dnd-kit/utilities';
 
 function EmployeeCard(props) {
 
-    var employee = props.data;
-    var isDraggable = props.draggable;
+  const employee = props.data.employee;
 
-
-      const {attributes, listeners, setNodeRef, transform, transition} = useDraggable({
-        id: employee.id,
-      });
-      
-      const style = {
-        transform: CSS.Translate.toString(transform),
-      };
 
 
       var sprachenV = [];
       
       employee.languages.forEach(function(sprache){
         sprachenV.push(
-
           <div className="flag">
                 <img src={Object.values(sprache)} />
           </div>
@@ -34,7 +24,7 @@ function EmployeeCard(props) {
 
       return (
 
-        <div ref={setNodeRef} style={style} {...attributes} {...listeners} >
+        <div>
         <div  className="employeeCard"  >
             <div className="name-and-title">
                 <div className="name">{employee.surname + " " + employee.name}</div>

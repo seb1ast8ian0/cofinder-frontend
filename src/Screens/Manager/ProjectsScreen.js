@@ -4,7 +4,7 @@ import Navigation from "../../Components/Navigation";
 import "../../Styles/Components/employee.css"
 import "../../Styles/Components/navigation.css"
 
-function ManagerProjectScreen() {
+function ProjectsScreen() {
 
     return(
         <div className="screen manager-project-screen">
@@ -19,4 +19,4 @@ function ManagerProjectScreen() {
     );
   }
 
-  export default ManagerProjectScreen;
+  export default ProjectsScreen;

@@ -1,0 +1,46 @@
+[
+   {
+      "zuteilungsId":3,
+      "projectId":2,
+      "rollenbezeichnung":"Junior Fullstack Developer",
+      "hoursRequired": 8,
+      "yearsInJobRequired": 13,
+      "salaryMax": 50,
+      "employee":null
+   },
+   {
+      "zuteilungsId":4,
+      "projectId":2,
+      "rollenbezeichnung":"Senior Requirements Engineer",
+      "hoursRequired": 9,
+      "yearsInJobRequired": 5,
+      "salaryMax": 55,
+      "employee":{
+         "id":"2",
+         "name":"Mustermann",
+         "surname":"Test",
+         "age":"30",
+         "email":"max.mustermann@gmail.com",
+         "travelAvailability":"mittel",
+         "yearsInCompany":"3",
+         "location":"Ismaning, DE",
+         "area":"Software Entwicklung",
+         "department":"IT",
+         "function":"Senior Requirements Engineering",
+         "languages":[
+            {
+               "Deutsch":"https://countryflagsapi.com/png/de"
+            },
+            {
+               "Englisch":"https://countryflagsapi.com/png/gb"
+            },
+            {
+               "Spanisch":"https://countryflagsapi.com/png/es"
+            }
+         ],
+         "hoursAvailable":"38",
+         "yearsInJob":"5",
+         "salary": 60
+      }
+   }
+]

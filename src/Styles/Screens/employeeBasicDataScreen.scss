@@ -5,7 +5,37 @@
     width: 300px;
     margin-right: -12%;
   }
-  
+
+  .employee-languages, .employee-skills{
+    gap: 200px;
+    padding: 14px 28px;
+    border-radius: 14px;
+    width: 65%;
+    height: 50px;
+    margin-bottom: 2%;
+    margin-left: 20%;
+  }
+
+  .whitebox,.textbox{
+    background-color: white;
+    align-items: center;
+    height: 200px;
+
+  }
+
+  .whitebox{
+    margin: 5%;
+    width: 250%;
+    margin-bottom: 10%;
+    border-radius: 14px;
+  }
+
+  .textbox{
+    border-radius: 14px;
+    margin-bottom: 3%;
+    height: 100px;
+
+  }
   
   
   .small-person-input {
@@ -43,8 +73,6 @@
   
   .experience-box{
     background-color: lightgrey;
-    align-items: center;
-    justify-content: center;
     gap: 200px;
     padding: 14px 28px;
     border-radius: 14px;
@@ -56,8 +84,6 @@
   }
   
   .data {
-    align-items: center;
-    justify-content: center;
     gap: 200px;
     padding: 14px 28px;
     border-radius: 14px;
@@ -68,8 +94,6 @@
   }
   
   .work-data {
-    align-items: center;
-    justify-content: center;
     gap: 200px;
     padding: 14px 28px;
     border-radius: 14px;
@@ -88,6 +112,10 @@
     margin-bottom: 3%;
     
   }
+
+  input,select,.textbox,.whitebox{
+    box-shadow: 2px 2px 4px grey;
+  }
   
   
   select{
@@ -99,16 +127,12 @@
   
   }
   
-  .data-container{
-    align-items: rigth;
-    justify-content: rigth;
-  }
   
   
   h2,h3 {
     margin-left: 23%;
     margin-top: 2%;
-    margin-bottom: 5% ;
+    margin-bottom: 1% ;
   
   }
   
@@ -123,6 +147,61 @@
   
   .button{
     width: 20%;
+    margin-right: -20%;
+  }
+
+  
+  .buttonGroup{
+    display: flex;
+    width: 500px;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+  }
+
+
+  .employee-skills{
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 20% [col-start]);
+  }
+
+  .toSelect{
+    margin: 1%;
+    background-color: lightblue;
+    color: black;
+  }
+
+  .downdown{
+    float:left; 
+    padding: 10px 10px;
+    width: 300px;
+    margin-right: -12%;
+    margin-top: -1%;
+  }
+
+  .normal{
+    float:left; 
+    padding: 10px 10px;
+    width: 300px;
+    margin-right: -12%;
+    margin-top: 0%;
+  }
+
+  .flex{
+    display: flex;
+  }
+
+  .skillButton{
+    margin: 3%;
+    background-color: darkgreen;
+    color: white;
+  }
+
+  .programming{
+    width: 130px;
+    margin-left: 70%;
+    margin-top: 5%;
   }
 }
 

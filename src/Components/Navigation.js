@@ -9,7 +9,7 @@ function Navigation() {
 
             <nav>
                 <ul>
-                    <NavLink to='/employee' className={({ isActive }) => (isActive ? "active" : "")} >
+                    <NavLink to='/' className={({ isActive }) => (isActive ? "active" : "")} >
                         <span className="material-symbols-outlined">home</span>
                         <span>Start</span>
                     </NavLink>
@@ -17,7 +17,7 @@ function Navigation() {
                         <span className="material-symbols-outlined">folder_open</span>
                         <span>Meine Projekte</span>
                     </NavLink>
-                    <NavLink to='/' className={({ isActive }) => (isActive ? "active" : "")} >
+                    <NavLink to='/xyz' className={({ isActive }) => (isActive ? "active" : "")} >
                         <span className="material-symbols-outlined">home</span>
                         <span>Profil</span>
                     </NavLink>

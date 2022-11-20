@@ -9,8 +9,9 @@ import LoginScreen from "./Screens/LoginScreen";
 import EmployeeBasicData from "./Screens/EmployeeBasicData";
 import ErrorScreen from "./Screens/ErrorScreen";
 import Header from './Components/Header';
-import EmployeeMainScreen from './Screens/Employee/EmployeeMainScreen';
-import ManagerProjectScreen from './Screens/Manager/ManagerProjectScreen';
+import ProjectScreen from './Screens/Manager/ProjectScreen';
+import ProjectsScreen from './Screens/Manager/ProjectsScreen'
+import StartScreen from './Screens/StartScreen';
 
 function App() {
   return (
@@ -18,10 +19,11 @@ function App() {
       <Header/>
       <BrowserRouter>
         <Routes>
-          <Route path="/projects" element={ManagerProjectScreen()} />
+          <Route path="/" element={StartScreen()} />
           <Route path="/login" element={LoginScreen()} />
           <Route path="/employeebasicdata" element={EmployeeBasicData()} />
-          <Route path="/employee" element={EmployeeMainScreen()} />
+          <Route path="/projects" element={ProjectsScreen()} />
+          <Route path="/projects/project/:id" element={ProjectScreen()} />
           <Route path="*" element={ErrorScreen()} />
         </Routes>
       </BrowserRouter>
