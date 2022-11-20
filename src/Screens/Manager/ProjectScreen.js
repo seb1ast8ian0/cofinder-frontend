@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 import {DndContext} from '@dnd-kit/core';
 import EmployeeCard from "../../Components/EmployeeCard";
 import EmployeeCardDroppable from "../../Components/EmployeeCardDroppable";
@@ -14,10 +14,34 @@ import {
 function EmployeeMainScreen() {
 
   const [isDropped, setIsDropped] = useState(false);
+  const [d, setD] = useState([]);
 
-  const url = "https://yummy-oranges-type-78-94-15-62.loca.lt";
+  const url = "https://witty-otters-beg-78-94-15-62.loca.lt/getWildcard";
+  const data = {"projectId": 1};
 
-  console.log(getProject(url, "1"));
+
+  useEffect(() => {
+
+    const params = {
+      headers: {
+  
+        "content-type": "application/json; charset=UTF-8"
+  
+      },
+      body: data,
+      method: "POST"
+  
+    }
+  
+    fetch(url, params)
+      .then(response=>response.json())
+      .then(data=>setD(data))
+      
+
+  }, []);
+
+  
+
 
   var employees = [];
   var wildCards = [];
@@ -34,7 +58,7 @@ function EmployeeMainScreen() {
   } 
   )
 
-  wildcard_json.forEach(function(wildCard){
+  d.forEach(function(wildCard){
 
     if(wildCard.employee === null || wildCard.employee === undefined){
 
@@ -75,6 +99,8 @@ function EmployeeMainScreen() {
 
               </div>
 
+              {console.log(d)}
+
               <h2>Vorgeschlagene Mitarbeiter:</h2>
 
               <div className="employees">
@@ -100,33 +126,8 @@ function EmployeeMainScreen() {
       }
     }
 
-    function getProject(url, id){
-
-      const xhr = new XMLHttpRequest();
-      //xhr.open("POST", 'http://localhost:9999/getProjects', true);
-      //xhr.open("POST", 'http://localhost:9990/getMitarbeiterFiltered', true);
-      xhr.open("GET", url + "/getWildcards", true);
-      
-      //Send the proper header information along with the request
-      xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-
-      
-      
-      xhr.onreadystatechange = () => { // Call a function when the state changes.
-        //console.log(xhr);
-
-          if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-
-          return (xhr.responseText);
-       
-        }
-      }
-      //xhr.send();
-      //xhr.send(JSON.stringify({zuweisungsID: "5", projectID: "4" }));
-      xhr.send(JSON.stringify({"projectId": id}));
-
-
-    }
+    
+    
 
 
   }
