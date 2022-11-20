@@ -10,7 +10,7 @@ function StartScreen() {
             <Navigation/>
 
             <div className="wrapper">
-              <h1>Hallo Welt!</h1>
+              <h1>Hallo Welt! :)</h1>
             </div>
 
 

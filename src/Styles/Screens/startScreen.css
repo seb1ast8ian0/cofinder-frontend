@@ -1,1 +1,11 @@
-/*# sourceMappingURL=startScreen.css.map */
+.start-screen .wrapper {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 80px;
+}
+.start-screen .wrapper h1 {
+  font-size: 4rem;
+  background-color: white;
+  padding: 7px 28px;
+}/*# sourceMappingURL=startScreen.css.map */

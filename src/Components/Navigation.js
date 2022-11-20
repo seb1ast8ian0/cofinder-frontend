@@ -25,8 +25,8 @@ function Navigation() {
                         <span className="material-symbols-outlined">add</span>
                         <span>Mitarbeiter</span>
                     </NavLink>
-                    <NavLink to='/'className="red" >
-                        <span className="material-symbols-outlined">delete</span>
+                    <NavLink to='/xyz'className="red" >
+                        <span className="material-symbols-outlined">logout</span>
                         <span>Logout</span>
                     </NavLink>
                     

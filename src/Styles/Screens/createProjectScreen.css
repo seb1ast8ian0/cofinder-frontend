@@ -1,0 +1,58 @@
+.create-project-screen .wrapper {
+  font-family: "Montserrat";
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.create-project-screen .wrapper .heading {
+  font-size: 20pt;
+}
+.create-project-screen .wrapper .named-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.create-project-screen .wrapper .named-field input, .create-project-screen .wrapper .named-field select, .create-project-screen .wrapper .named-field textarea {
+  background-color: white;
+  height: 30px;
+  padding: 0;
+  padding-left: 10px;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.25);
+}
+.create-project-screen .wrapper .row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.create-project-screen .wrapper .row1 .name-input {
+  width: 60%;
+}
+.create-project-screen .wrapper .row1 .category-input {
+  width: 40%;
+}
+.create-project-screen .wrapper .row2 .desc-input {
+  width: 100%;
+}
+.create-project-screen .wrapper .row2 .desc-input textarea {
+  height: 200px;
+  padding: 10px;
+}
+.create-project-screen .wrapper .row3 .startdate-input {
+  width: 30%;
+}
+.create-project-screen .wrapper .row3 .duration-input {
+  width: 30%;
+}
+.create-project-screen .wrapper .row3 .effort-input {
+  width: 30%;
+}
+.create-project-screen .wrapper .buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.create-project-screen .wrapper .buttons button {
+  font-size: 14pt;
+}/*# sourceMappingURL=createProjectScreen.css.map */

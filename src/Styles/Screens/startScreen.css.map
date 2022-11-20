@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"startScreen.css"}
+{"version":3,"sources":["startScreen.scss","startScreen.css"],"names":[],"mappings":"AACI;EAEI,OAAA;EACA,mBAAA;EACA,uBAAA;EACA,oBAAA;ACDR;ADGQ;EAEI,eAAA;EACA,uBAAA;EACA,iBAAA;ACFZ","file":"startScreen.css"}
