@@ -2,7 +2,6 @@ import {
   BrowserRouter, Route, Routes
 } from "react-router-dom";
 import Header from './Components/Header';
-import EmployeeMainScreen from './Screens/Employee/EmployeeMainScreen';
 import EmployeeBasicData from "./Screens/EmployeeBasicData";
 import ErrorScreen from "./Screens/ErrorScreen";
 import LoginScreen from "./Screens/LoginScreen";
@@ -23,7 +22,6 @@ function App() {
           <Route path="/employeebasicdata" element={EmployeeBasicData()} />
           <Route path="/projects" element={ProjectsScreen()} />
           <Route path="/projects/project/:id" element={ProjectScreen()} />
-          <Route path="/employee" element={EmployeeMainScreen()} />
           <Route path="/testeditwildcardmodal" element={TestEditWildCardModalScreen()} />
           <Route path="*" element={ErrorScreen()} />
         </Routes>
