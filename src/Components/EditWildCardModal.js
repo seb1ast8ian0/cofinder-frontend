@@ -15,11 +15,17 @@ class EditWildCardModal extends React.Component {
                             <div className="named-field function-input">
                                 <label htmlFor="function">Funktion</label>
                                 <select name="function">
+                                    <option>Junior Developer</option>
+                                    <option>Senior Developer</option>
+                                    <option>IT-Consultant</option>
                                 </select>
                             </div>
                             <div className="named-field experience-input">
                                 <label htmlFor="experience">Berufserfahrung</label>
                                 <select name="experience">
+                                    <option>weniger als 5 Jahre</option>
+                                    <option>weniger als 10 Jahre</option>
+                                    <option>mehr als 10 Jahre</option>
                                 </select>
                             </div>
                             <div className="named-field hours-input">
@@ -36,6 +42,9 @@ class EditWildCardModal extends React.Component {
                             <div className="named-field location-input">
                                 <label htmlFor="location">Standort</label>
                                 <select name="location">
+                                    <option>München</option>
+                                    <option>Berlin</option>
+                                    <option>Frankfurt</option>
                                 </select>
                             </div>
                             <div className="named-field language-input">
