@@ -18,7 +18,7 @@ function EmployeeMainScreen() {
   const [showModal, setShowModal] = useState(false);
   const {id} = useParams();
 
-  const url = "https://spotty-rocks-teach-78-94-15-62.loca.lt/";
+  const url = "https://cute-radios-deny-78-94-15-62.loca.lt/";
   const data = {"projectId": 2}; //TODO: wenns noch keine wildcard zu einem Projekt gibt, fehler abfangen
 
   /** */
