@@ -1,8 +1,14 @@
+.basic-data {
+  display: flex;
+  flex-direction: row;
+}
+.basic-data .data-container {
+  padding: 14px;
+  box-sizing: border-box;
+}
 .basic-data .person-input {
   float: left;
-  padding: 10px 10px;
   width: 300px;
-  margin-right: -12%;
 }
 .basic-data .employee-languages, .basic-data .employee-skills {
   gap: 200px;
@@ -11,7 +17,6 @@
   width: 65%;
   height: 50px;
   margin-bottom: 2%;
-  margin-left: 20%;
 }
 .basic-data .whitebox, .basic-data .textbox {
   background-color: white;
@@ -31,17 +36,14 @@
 }
 .basic-data .small-person-input {
   float: left;
-  padding: 10px 10px;
-  margin-right: -5%;
 }
-.basic-data .work-input {
-  float: left;
-  padding: 10px 10px;
-  width: 30%;
-  margin-right: -9%;
+.basic-data .work-input input, .basic-data .work-input select {
+  min-width: 150px;
 }
 .basic-data .row {
-  margin-bottom: 13%;
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
 }
 .basic-data .addButton {
   margin-left: 23%;
@@ -64,32 +66,33 @@
   width: 65%;
   height: 500%;
   margin-bottom: 2%;
-  margin-left: 23%;
   margin-top: 3%;
 }
 .basic-data .data {
-  gap: 200px;
-  padding: 14px 28px;
   border-radius: 14px;
   width: 65%;
-  height: 110px;
   margin-bottom: 2%;
-  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.basic-data .data-group {
+  display: flex;
+  flex-direction: row;
+  gap: 14px;
 }
 .basic-data .work-data {
-  gap: 200px;
-  padding: 14px 28px;
   border-radius: 14px;
   width: 65%;
   height: 170px;
   margin-bottom: 2%;
-  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 .basic-data input,
 .basic-data label {
   display: block;
-  width: 50%;
-  margin-bottom: 3%;
 }
 .basic-data input, .basic-data select, .basic-data .textbox, .basic-data .whitebox {
   box-shadow: 2px 2px 4px grey;
@@ -102,20 +105,14 @@
   border-radius: 7px;
 }
 .basic-data h2, .basic-data h3 {
-  margin-left: 23%;
   margin-top: 2%;
   margin-bottom: 1%;
 }
-.basic-data h2 {
-  margin-top: 10%;
-}
 .basic-data .save {
-  margin-left: 73%;
   width: 10%;
 }
 .basic-data .button {
   width: 20%;
-  margin-right: -20%;
 }
 .basic-data .buttonGroup {
   display: flex;
@@ -136,16 +133,12 @@
 }
 .basic-data .downdown {
   float: left;
-  padding: 10px 10px;
   width: 300px;
-  margin-right: -12%;
-  margin-top: -1%;
 }
 .basic-data .normal {
   float: left;
   padding: 10px 10px;
   width: 300px;
-  margin-right: -12%;
   margin-top: 0%;
 }
 .basic-data .flex {
@@ -158,6 +151,5 @@
 }
 .basic-data .programming {
   width: 130px;
-  margin-left: 70%;
   margin-top: 5%;
 }/*# sourceMappingURL=employeeBasicDataScreen.css.map */
