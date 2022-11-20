@@ -8,8 +8,11 @@ function EmployeeCard(props) {
   const employee = props.data.employee;
 
 
-    /** 
+    
       var sprachenV = [];
+
+      /** 
+      if(employee.languages != null && !(props.data.MitarbeiterID === null)){
       
       employee.languages.forEach(function(sprache){
         sprachenV.push(
@@ -20,15 +23,19 @@ function EmployeeCard(props) {
         )
       }
       
+      )
 
-      )*/
+    }
+
+    */
+      
 
       return (
 
         <div>
         <div  className="employeeCard"  >
             <div className="name-and-title">
-                <div className="name">{employee.surname + " " + employee.name}</div>
+                <div className="name">{employee.prename + " " + employee.name}</div>
                 <div className="title">{employee.function}</div>
             </div>
             <div className="profilepicture">
