@@ -346,5 +346,212 @@
             }
         }
     }
+}
 
+.editWildCardModal {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px) brightness(0.7);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+    .wrapper {
+        margin: auto;
+        font-family: "Montserrat";
+        background-image: url("../../../public/layered-waves_variant1.svg");
+        background-color: #eff1f3;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        padding: 20px;
+        width: 80%;
+        box-sizing: border-box;
+
+        .heading {
+            font-size: 20pt;
+            font-weight: 700;
+        }
+
+        .settings {
+            width: 100%;
+            height: 80%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-family: "Montserrat";
+            font-weight: 500;
+
+            select {
+                border: none;
+                background-color: white;
+                height: 30px;
+                border-radius: 8px;
+            }
+
+            input {
+                border: none;
+                background-color: white;
+                height: 30px;
+                border-radius: 8px;
+                padding: 0px;
+            }
+            
+            .named-field {
+                display: flex;
+                flex-direction: column;
+                align-items: left;
+                width: 100%;
+
+                label {
+                    margin-bottom: 5px;
+                }
+            }
+
+            .row1 {
+                display: flex;
+                flex-direction: row;
+                gap: 30px;
+                width: 100%;
+
+
+                .function-input {
+                    width: 400px;
+                }
+
+                .experience-input {
+                    width: 140px;
+                }
+
+                .hours-input {
+
+                    width: 140px;
+
+                    input[type=text] {
+                        text-align: center;
+                    }
+
+                    .variable-hours-rb {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        margin-top: 5px;
+
+                        input[type=checkbox] {
+                            margin: 0;
+                            margin-right: 10px;
+                            accent-color: #758bd4;
+                        }
+                    }
+                }
+
+            }
+
+            .row2 {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                width: 100%;
+
+                .location-input {
+                    width: 250px;
+                }
+
+                .language-input {
+                    width: 200px;
+
+                    .icon-and-text {
+                        height: 30px;
+                        border: 2px solid #c9cce2;
+                        color: #7b81ba;
+                        border-radius: 8px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        cursor: pointer;
+
+                        .material-symbols-outlined {
+                            scale: 0.8;
+                            color: #83859C;
+                            float: left;
+                            font-variation-settings : 'FILL' 1
+                        }
+                    }
+                }
+            }
+
+            .row3 {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+                width: 100%;
+
+                .skills-input {
+                    width: 50%;
+
+                    div {
+                        background-color: white;
+                        border-radius: 8px;
+                        height: 200px;
+                    }
+                }
+
+                .skills-suggestion {
+
+                    width: 50%;
+
+                    .heading {
+                        font-weight: 500;
+                        font-size: 12pt;
+                        color: #ABABAB;
+                        margin-bottom: 5px;
+                    }
+
+                    .suggested-skills {
+                        display: grid;
+                        grid-template-columns: 80px 80px 80px;
+                        grid-template-rows: 40px 40px; 
+                        column-gap: 10px;
+                        row-gap: 5px;
+                        margin-bottom: 15px;
+
+                        .item {
+                            width: 80px;
+                            background-color: #c9cce2;
+                            padding: 3px;
+                            border-radius: 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+                padding: 15px;
+            }
+
+            .cancel {
+                background: none;
+                color: #4F4C6A;
+                margin-right: 20px;
+            }
+        }
+
+    }
 }

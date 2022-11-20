@@ -1,8 +1,7 @@
-
-import Projects from "../../Components/Projects";
 import Navigation from "../../Components/Navigation";
-import "../../Styles/Components/employee.css"
-import "../../Styles/Components/navigation.css"
+import Projects from "../../Components/Projects";
+import "../../Styles/Components/employee.css";
+import "../../Styles/Components/navigation.css";
 
 function ProjectsScreen() {
 
