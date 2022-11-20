@@ -1,6 +1,7 @@
 import { DndContext } from '@dnd-kit/core';
 import { useEffect, useState } from 'react';
-import {useParams} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import AddWildCard from '../../Components/AddWildCard';
 import EditWildCardModal from '../../Components/EditWildCardModal';
 import EmployeeCard from "../../Components/EmployeeCard";
 import EmployeeCardDroppable from "../../Components/EmployeeCardDroppable";
@@ -47,10 +48,23 @@ function EmployeeMainScreen() {
   
 
   
-
+  function addWildCard(){
+    let data = {
+        "zuteilungsId":4,
+        "projectId":2,
+        "rollenbezeichnung":"Platzhalter",
+        "hoursRequired": 9,
+        "yearsInJobRequired": 5,
+        "salaryMax": 55,
+        "MitarbeiterID" : null,
+    }
+            
+    wildCards.push(<WildCard data={data} id={wildCards.length} showModal={setShowModal}/>);
+    setD(wildCards);
+  }
 
   var employees = [];
-  var wildCards = [];
+  var wildCards = [<AddWildCard callback={addWildCard}/>];
   let employee_json = require('../../data.json');
   let wildcard_json = require('../../wildcard.json');
 
