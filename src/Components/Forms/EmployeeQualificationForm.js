@@ -16,6 +16,7 @@ class EmployeeQualificationForm extends React.Component {
                         <h4>Berufserfahrung bearbeiten</h4>
                         <h4>Position</h4>
                         <form>
+                            <div className="smallgrid">
                             <div className="small-position-input">
                                 <label htmlFor="positions">Positionsbezeichnung</label>
                                 <input type="text" name="position" />
@@ -29,11 +30,12 @@ class EmployeeQualificationForm extends React.Component {
                                     <option value="2">Praktikum</option>
                                 </select>
                             </div>
+                            </div>
                         </form>
                         <br></br><br></br><br></br>
                         <h4><br></br>Unternehmen</h4>
                         <form>
-
+                        <div className="smallgrid">
                             <div className="position-input">
                                 <label htmlFor="company">Name</label>
                                 <input type="text" name="company" />
@@ -45,6 +47,7 @@ class EmployeeQualificationForm extends React.Component {
                                     <option value="0">IT</option>
                                     <option value="1">Management</option>
                                 </select>
+                            </div>
                             </div>
                         </form>
                         <br></br><br></br><br></br>

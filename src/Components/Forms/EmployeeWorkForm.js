@@ -6,8 +6,8 @@ class EmployeeWorkForm extends React.Component {
         return (
             <div className="employee-work">
                 <form>
-                    <div className="work-data">
-                        <div className="row">
+                    <div className="data">
+                        <div className="fourgrid">
                             <div className="work-input">
                                 <label htmlFor="since">Bei msg seit ..</label>
                                 <input type="date" name="since" />
@@ -41,14 +41,14 @@ class EmployeeWorkForm extends React.Component {
                                 </select>
                             </div>
                         </div>
-                        <div className="row">
+                        <div className="fourgrid">
                             <div className="work-input">
                                 <label htmlFor="travel">Reisebereitschaft</label>
                                 <select name="travel" >
                                     <option value="" disabled selected hidden>Bitte Auswählen </option>
                                     <option value="0">hoch</option>
-                                    <option value="0">mittel</option>
-                                    <option value="1">wenig</option>
+                                    <option value="1">mittel</option>
+                                    <option value="">wenig</option>
                                 </select>
                             </div>
                             <div className="work-input">
