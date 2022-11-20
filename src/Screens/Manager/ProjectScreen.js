@@ -14,29 +14,27 @@ function EmployeeMainScreen() {
   const [d, setD] = useState([]);
   const [showModal, setShowModal] = useState(false);
 
-  const url = "https://witty-otters-beg-78-94-15-62.loca.lt/getWildcard";
+  const url = "https://slimy-heads-study-78-94-15-62.loca.lt/getWildcards";
   const data = {"projectId": 1};
+
+  /** */
 
 
   useEffect(() => {
 
-    const params = {
-      headers: {
-  
-        "content-type": "application/json; charset=UTF-8"
-  
-      },
-      body: data,
-      method: "POST"
-  
-    }
-  
-    fetch(url, params)
-      .then(response=>response.json())
-      .then(data=>setD(data))
+    var temp = JSON.parse(httpGet(url));
+
+    console.log(temp)
+
+
+    setD(temp);
+    
+
       
 
   }, []);
+
+  
 
   
 
@@ -56,6 +54,7 @@ function EmployeeMainScreen() {
   } 
   )
 
+
   d.forEach(function(wildCard){
 
     if(wildCard.employee === null || wildCard.employee === undefined){
@@ -70,6 +69,9 @@ function EmployeeMainScreen() {
     
   } 
   )
+
+
+
 
   console.log(employee_json);
 
@@ -125,6 +127,31 @@ function EmployeeMainScreen() {
         console.log(event.over.id)
       }
     }
+
+    function httpGet(theUrl){
+
+      console.log("start fetching: " + theUrl);
+      var resp;
+    
+      try {
+    
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open( "POST", theUrl, false); // false for synchronous request
+        xmlHttp.send(JSON.stringify({"projectId": 1}));
+        resp =  xmlHttp.responseText;
+        
+      } catch (error) {
+    
+        console.log(error);
+        resp =  null;
+        
+      }
+    
+      return xmlHttp.responseText;
+    
+    
+    }
+    
 
     
     

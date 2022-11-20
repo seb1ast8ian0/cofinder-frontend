@@ -17,9 +17,17 @@ function Navigation() {
                         <span className="material-symbols-outlined">folder_open</span>
                         <span>Meine Projekte</span>
                     </NavLink>
-                    <NavLink to='/xyz' className={({ isActive }) => (isActive ? "active" : "")} >
+                    {/**<NavLink to='/xyz' className={({ isActive }) => (isActive ? "active" : "")} >
                         <span className="material-symbols-outlined">home</span>
                         <span>Profil</span>
+                    </NavLink>**/}
+                    <NavLink to='/employee/new' className={({ isActive }) => (isActive ? "active" : "")} >
+                        <span className="material-symbols-outlined">add</span>
+                        <span>Mitarbeiter</span>
+                    </NavLink>
+                    <NavLink to='/'className="red" >
+                        <span className="material-symbols-outlined">delete</span>
+                        <span>Logout</span>
                     </NavLink>
                     
                     

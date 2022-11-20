@@ -7,24 +7,32 @@ class EmployeePersonForm extends React.Component {
             <div className="employee-person">
                 <form>
                     <div className="data">
-                        <div className="person-input">
-                            <label htmlFor="surname">Vorname</label>
-                            <input type="text" name="surname" placeholder="Vorname" />
+                        <div className="data-group">
+                            <div className="person-input">
+                                <label htmlFor="surname">Vorname</label>
+                                <input type="text" name="surname" placeholder="Vorname" />
+                            </div>
+                            <div className="person-input">
+                                <label htmlFor="lastname">Nachname</label>
+                                <input type="text" name="lastname" placeholder="Nachname"/>
+                            </div>
                         </div>
-                        <div className="person-input">
-                            <label htmlFor="lastname">Nachname</label>
-                            <input type="text" name="lastname" placeholder="Nachname"/>
-                        </div>
-                        <div className="small-person-input">
+                        <div className="data-group">
 
-                            <label htmlFor="birthday">Geburtstag</label>
-                            <input type="date" name="birthday" />
-                        </div>
-                        <div className="person-input">
+                            <div className="small-person-input">
 
-                            <label htmlFor="email">Email-adresse</label>
-                            <input type="text" name="lastname" placeholder="verySweetEmail@123"/>
-                        </div>
+                                <label htmlFor="birthday">Geburtstag</label>
+                                <input type="date" name="birthday" />
+                            </div>
+                            <div className="person-input">
+
+                                <label htmlFor="email">Email-adresse</label>
+                                <input type="text" name="lastname" placeholder="verySweetEmail@123"/>
+                                </div>
+
+                            </div>
+                        
+                        
                     </div>
 
 

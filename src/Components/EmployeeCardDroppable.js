@@ -8,7 +8,7 @@ function EmployeeCard(props) {
   const employee = props.data.employee;
 
 
-
+    /** 
       var sprachenV = [];
       
       employee.languages.forEach(function(sprache){
@@ -19,8 +19,9 @@ function EmployeeCard(props) {
 
         )
       }
+      
 
-      )
+      )*/
 
       return (
 
@@ -55,7 +56,7 @@ function EmployeeCard(props) {
 
             <div className="languages">
               
-              {sprachenV}
+              {/**sprachenV*/}
               
             </div>
 
