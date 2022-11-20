@@ -5,6 +5,7 @@ import Header from './Components/Header';
 import EmployeeBasicData from "./Screens/EmployeeBasicData";
 import ErrorScreen from "./Screens/ErrorScreen";
 import LoginScreen from "./Screens/LoginScreen";
+import CreateProjectScreen from "./Screens/Manager/CreateProjectScreen";
 import ProjectScreen from './Screens/Manager/ProjectScreen';
 import ProjectsScreen from './Screens/Manager/ProjectsScreen';
 import StartScreen from './Screens/StartScreen';
@@ -23,6 +24,7 @@ function App() {
           <Route path="/projects" element={ProjectsScreen()} />
           <Route path="/projects/project/:id" element={ProjectScreen()} />
           <Route path="/testeditwildcardmodal" element={TestEditWildCardModalScreen()} />
+          <Route path="/projects/create" element={CreateProjectScreen()} />
           <Route path="*" element={ErrorScreen()} />
         </Routes>
       </BrowserRouter>
