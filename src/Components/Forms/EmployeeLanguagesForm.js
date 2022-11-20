@@ -4,17 +4,17 @@ import "../../Styles/Screens/employeeBasicDataScreen.css"
 class EmployeeLanguagesForm extends React.Component {
     render() {
         return (
-            <div className="employee-languages">
+            <div>
                 <form>
-                    <div className="work-input">
+                    <div className="gridy">
                     <select className="" >
                         <option value="" disabled selected hidden>Wählen </option>
                         <option value="0">Deutsch</option>
                         <option value="1">Englisch</option>
-                        <option value="1">Spanisch</option>
+                        <option value="2">Spanisch</option>
                     </select>
                     </div>
-                    <div className="buttonGroup">
+                    <div className="fourgrid">
                     <button><span className="material-symbols-outlined">do_not_disturb_on</span>
                         <span> Deutsch</span>
 

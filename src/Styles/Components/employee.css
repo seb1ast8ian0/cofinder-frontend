@@ -7,6 +7,9 @@
 .employee-main-screen {
   flex-direction: row;
 }
+.employee-main-screen .wrapper {
+  width: 100%;
+}
 .employee-main-screen button {
   border: none;
   outline: none;
@@ -29,7 +32,7 @@
 
 .wildCard {
   background-color: white;
-  width: 250px;
+  min-width: 250px;
   height: 350px;
   box-sizing: border-box;
   border-radius: 14px;
@@ -74,6 +77,10 @@
   padding: 14px;
   border-radius: 14px 14px 0px 0px;
   padding-bottom: 33px;
+  min-height: 103px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .wildCard .name-and-title .title {
   color: white;
@@ -176,6 +183,11 @@
   padding: 14px;
 }
 
+.card-animation:hover {
+  -webkit-animation: animated-card 1s infinite;
+          animation: animated-card 1s infinite;
+}
+
 .employeeCard {
   background-color: white;
   width: 250px;
@@ -186,10 +198,7 @@
   flex-direction: column;
   align-items: center;
   box-shadow: -4px -4px 15px white, 4px 4px 15px rgba(0, 0, 0, 0.2);
-}
-.employeeCard:hover {
-  -webkit-animation: animated-card 1s infinite;
-          animation: animated-card 1s infinite;
+  cursor: pointer;
 }
 .employeeCard .material-symbols-outlined {
   color: #83859C;
@@ -283,4 +292,179 @@
   height: 20px;
   border-radius: 2px;
   box-shadow: 0 0 3px rgba(56, 51, 51, 0.688);
+}
+
+.editWildCardModal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-backdrop-filter: blur(10px) brightness(0.7);
+          backdrop-filter: blur(10px) brightness(0.7);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.editWildCardModal .wrapper {
+  margin: auto;
+  font-family: "Montserrat";
+  background-image: url("../../../public/layered-waves_variant1.svg");
+  background-color: #eff1f3;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 20px;
+  width: 80%;
+  box-sizing: border-box;
+}
+.editWildCardModal .wrapper .heading {
+  font-size: 20pt;
+  font-weight: 700;
+}
+.editWildCardModal .wrapper .settings {
+  width: 100%;
+  height: 80%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: "Montserrat";
+  font-weight: 500;
+}
+.editWildCardModal .wrapper .settings select {
+  border: none;
+  background-color: white;
+  height: 30px;
+  border-radius: 8px;
+}
+.editWildCardModal .wrapper .settings input {
+  border: none;
+  background-color: white;
+  height: 30px;
+  border-radius: 8px;
+  padding: 0px;
+}
+.editWildCardModal .wrapper .settings .named-field {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+}
+.editWildCardModal .wrapper .settings .named-field label {
+  margin-bottom: 5px;
+}
+.editWildCardModal .wrapper .settings .row1 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  width: 100%;
+}
+.editWildCardModal .wrapper .settings .row1 .function-input {
+  width: 400px;
+}
+.editWildCardModal .wrapper .settings .row1 .experience-input {
+  width: 140px;
+}
+.editWildCardModal .wrapper .settings .row1 .hours-input {
+  width: 140px;
+}
+.editWildCardModal .wrapper .settings .row1 .hours-input input[type=text] {
+  text-align: center;
+}
+.editWildCardModal .wrapper .settings .row1 .hours-input .variable-hours-rb {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+}
+.editWildCardModal .wrapper .settings .row1 .hours-input .variable-hours-rb input[type=checkbox] {
+  margin: 0;
+  margin-right: 10px;
+  accent-color: #758bd4;
+}
+.editWildCardModal .wrapper .settings .row2 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+.editWildCardModal .wrapper .settings .row2 .location-input {
+  width: 250px;
+}
+.editWildCardModal .wrapper .settings .row2 .language-input {
+  width: 200px;
+}
+.editWildCardModal .wrapper .settings .row2 .language-input .icon-and-text {
+  height: 30px;
+  border: 2px solid #c9cce2;
+  color: #7b81ba;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.editWildCardModal .wrapper .settings .row2 .language-input .icon-and-text .material-symbols-outlined {
+  scale: 0.8;
+  color: #83859C;
+  float: left;
+  font-variation-settings: "FILL" 1;
+}
+.editWildCardModal .wrapper .settings .row3 {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+.editWildCardModal .wrapper .settings .row3 .skills-input {
+  width: 50%;
+}
+.editWildCardModal .wrapper .settings .row3 .skills-input div {
+  background-color: white;
+  border-radius: 8px;
+  height: 200px;
+}
+.editWildCardModal .wrapper .settings .row3 .skills-suggestion {
+  width: 50%;
+}
+.editWildCardModal .wrapper .settings .row3 .skills-suggestion .heading {
+  font-weight: 500;
+  font-size: 12pt;
+  color: #ABABAB;
+  margin-bottom: 5px;
+}
+.editWildCardModal .wrapper .settings .row3 .skills-suggestion .suggested-skills {
+  display: grid;
+  grid-template-columns: 80px 80px 80px;
+  grid-template-rows: 40px 40px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 5px;
+  margin-bottom: 15px;
+}
+.editWildCardModal .wrapper .settings .row3 .skills-suggestion .suggested-skills .item {
+  width: 80px;
+  background-color: #c9cce2;
+  padding: 3px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.editWildCardModal .wrapper .buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.editWildCardModal .wrapper .buttons button {
+  padding: 15px;
+}
+.editWildCardModal .wrapper .buttons .cancel {
+  background: none;
+  color: #4F4C6A;
+  margin-right: 20px;
 }/*# sourceMappingURL=employee.css.map */

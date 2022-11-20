@@ -19,6 +19,8 @@ function EmployeeCard(props) {
 
 
       var sprachenV = [];
+
+      /*
       
       employee.languages.forEach(function(sprache){
         sprachenV.push(
@@ -32,12 +34,14 @@ function EmployeeCard(props) {
 
       )
 
+      */
+
       return (
 
         <div ref={setNodeRef} style={style} {...attributes} {...listeners} >
-        <div  className="employeeCard"  >
+        <div  className="employeeCard card-animation"  >
             <div className="name-and-title">
-                <div className="name">{employee.surname + " " + employee.name}</div>
+                <div className="name">{employee.prename + " " + employee.name}</div>
                 <div className="title">{employee.function}</div>
             </div>
             <div className="profilepicture">
