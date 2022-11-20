@@ -1,5 +1,6 @@
 import { DndContext } from '@dnd-kit/core';
 import { useEffect, useState } from 'react';
+import AddWildCard from '../../Components/AddWildCard';
 import EditWildCardModal from '../../Components/EditWildCardModal';
 import EmployeeCard from "../../Components/EmployeeCard";
 import EmployeeCardDroppable from "../../Components/EmployeeCardDroppable";
@@ -14,7 +15,7 @@ function EmployeeMainScreen() {
   const [d, setD] = useState([]);
   const [showModal, setShowModal] = useState(false);
 
-  const url = "https://slimy-heads-study-78-94-15-62.loca.lt/getWildcards";
+  const url = "https://spotty-rocks-teach-78-94-15-62.loca.lt/getWildcards";
   const data = {"projectId": 1};
 
   /** */
@@ -37,10 +38,23 @@ function EmployeeMainScreen() {
   
 
   
-
+  function addWildCard(){
+    let data = {
+        "zuteilungsId":4,
+        "projectId":2,
+        "rollenbezeichnung":"Platzhalter",
+        "hoursRequired": 9,
+        "yearsInJobRequired": 5,
+        "salaryMax": 55,
+        "MitarbeiterID" : null,
+    }
+            
+    wildCards.push(<WildCard data={data} id={wildCards.length} showModal={setShowModal}/>);
+    setD(wildCards);
+  }
 
   var employees = [];
-  var wildCards = [];
+  var wildCards = [<AddWildCard callback={addWildCard}/>];
   let employee_json = require('../../data.json');
   let wildcard_json = require('../../wildcard.json');
 
@@ -137,7 +151,7 @@ function EmployeeMainScreen() {
     
         var xmlHttp = new XMLHttpRequest();
         xmlHttp.open( "POST", theUrl, false); // false for synchronous request
-        xmlHttp.send(JSON.stringify({"projectId": 1}));
+        xmlHttp.send(JSON.stringify({"projectId": 2}));
         resp =  xmlHttp.responseText;
         
       } catch (error) {

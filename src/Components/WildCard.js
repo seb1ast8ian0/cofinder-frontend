@@ -16,7 +16,7 @@ function WildCard(props){
       return (
         <div className="wildCard" ref={setNodeRef} style={style} onClick={() => props.showModal(true)}>
             <div className="name-and-title">
-                <div className="title">{wildCard.rollenbezeichnung.toString()}</div>
+                <div className="title">{wildCard.rollenbezeichnung}</div>
             </div>
             <div className="profilepicture">
                 <img src="/cofinder-placeholder.png"/>
