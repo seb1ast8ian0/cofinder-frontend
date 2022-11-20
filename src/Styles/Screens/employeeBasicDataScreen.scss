@@ -1,9 +1,18 @@
 .basic-data{
+
+  display: flex;
+  flex-direction: row;
+
+  .data-container{
+
+    padding: 14px;
+    box-sizing: border-box;
+
+  }
+
   .person-input {
-    float:left; 
-    padding: 10px 10px;
+    float:left;
     width: 300px;
-    margin-right: -12%;
   }
 
   .employee-languages, .employee-skills{
@@ -13,7 +22,6 @@
     width: 65%;
     height: 50px;
     margin-bottom: 2%;
-    margin-left: 20%;
   }
 
   .whitebox,.textbox{
@@ -40,19 +48,18 @@
   
   .small-person-input {
     float:left; 
-    padding: 10px 10px;
-    margin-right: -5%;
   }
   
   .work-input {
-    float:left; 
-    padding: 10px 10px;
-    width: 30%;
-    margin-right: -9%;
+    input, select{
+      min-width: 150px;
+    }
   }
   
   .row{
-    margin-bottom: 13%;
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
   }
   
   .addButton{
@@ -79,28 +86,35 @@
     width: 65%;
     height: 500%;
     margin-bottom: 2%;
-    margin-left: 23%;
     margin-top: 3%;
   }
   
   .data {
-    gap: 200px;
-    padding: 14px 28px;
+  
     border-radius: 14px;
     width: 65%;
-    height: 110px;
     margin-bottom: 2%;
-    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .data-group{
+
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+
   }
   
   .work-data {
-    gap: 200px;
-    padding: 14px 28px;
     border-radius: 14px;
     width: 65%;
     height: 170px;
     margin-bottom: 2%;
-    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
   
   }
   
@@ -108,8 +122,6 @@
   input,
   label {
     display: block;
-    width: 50%;
-    margin-bottom: 3%;
     
   }
 
@@ -130,24 +142,21 @@
   
   
   h2,h3 {
-    margin-left: 23%;
     margin-top: 2%;
     margin-bottom: 1% ;
   
   }
   
   h2{
-    margin-top: 10%;
   }
   
   .save{
-    margin-left: 73%;
     width: 10%;
   }
   
   .button{
     width: 20%;
-    margin-right: -20%;
+    
   }
 
   
@@ -173,18 +182,14 @@
   }
 
   .downdown{
-    float:left; 
-    padding: 10px 10px;
+    float:left;
     width: 300px;
-    margin-right: -12%;
-    margin-top: -1%;
   }
 
   .normal{
     float:left; 
     padding: 10px 10px;
     width: 300px;
-    margin-right: -12%;
     margin-top: 0%;
   }
 
@@ -200,7 +205,6 @@
 
   .programming{
     width: 130px;
-    margin-left: 70%;
     margin-top: 5%;
   }
 }

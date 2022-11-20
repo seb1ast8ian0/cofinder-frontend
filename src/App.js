@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={StartScreen()} />
           <Route path="/login" element={LoginScreen()} />
-          <Route path="/employeebasicdata" element={EmployeeBasicData()} />
+          <Route path="/employee/new" element={EmployeeBasicData()} />
           <Route path="/projects" element={ProjectsScreen()} />
           <Route path="/projects/project/:id" element={ProjectScreen()} />
           <Route path="/testeditwildcardmodal" element={TestEditWildCardModalScreen()} />

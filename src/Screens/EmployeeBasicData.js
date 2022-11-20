@@ -6,12 +6,16 @@ import EmployeeLanguagesForm from '../Components/Forms/EmployeeLanguagesForm';
 
 import EmployeeTopSkills from '../Components/EmployeeTopSkills';
 import EmployeeITSkills from '../Components/EmployeeITSkills';
+import Navigation from '../Components/Navigation';
 
 function EmployeeBasicData() {
 
     return(
         
         <div className="basic-data">
+
+            <Navigation/>
+
             <div className="data-container">
        
             <h2>Stammdaten bearbeiten</h2>
