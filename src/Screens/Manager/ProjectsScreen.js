@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "../../Components/Navigation";
 import Projects from "../../Components/Projects";
 import "../../Styles/Components/employee.css";
@@ -10,7 +11,9 @@ function ProjectsScreen() {
             <Navigation/>
             <div className="wrapper">
                 <Projects/>
-                <button>Projekt Hinzufügen</button>         
+                <Link to={"/projects/create"}>
+                    <button>Projekt Hinzufügen</button>         
+                </Link>
             </div>
             
 

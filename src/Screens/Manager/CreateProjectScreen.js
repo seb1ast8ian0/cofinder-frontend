@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navigation from "../../Components/Navigation";
 import "../../Styles/Components/employee.css";
 import "../../Styles/Components/navigation.css";
@@ -70,7 +71,9 @@ function CreateProjectScreen() {
                 </div>
 
                 <div className="buttons">
-                    <button>Weiter</button>
+                    <Link to={'/projects/project/2'}>
+                        <button>Weiter</button>
+                    </Link>
                 </div>
             </div>
         </div>
